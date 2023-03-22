@@ -12,8 +12,8 @@ void print_alphabet(void)
 	a = 'a';
 	while (a < 123)
 	{
-		putchar(a);
+		_putchar(a);
 		a++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
