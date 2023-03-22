@@ -1,20 +1,24 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_alphabet - whatever
+ * print_alphabet_x10 - whatever
  *
  * Return: always void
  */
 void print_alphabet(void)
 {
 	char a;
+	int i;
 
 	a = 'a';
-	while (a < 123)
+	for (i = 0; i < 10; i++)
 	{
-		_putchar(a);
-		a++;
+		while (a < 123)
+		{
+			_putchar(a);
+			a++;
+		}
+		_putchar('\n');
 	}
 	_putchar('\n');
 }
