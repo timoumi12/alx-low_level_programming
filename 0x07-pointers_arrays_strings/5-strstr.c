@@ -2,8 +2,8 @@
 
 /**
  * _strstr - gets the length of a prefix substring
- * @s: buffer
- * @accept: char
+ * @haystack: buffer
+ * @needle: buffer
  *
  * Return: int
 */
