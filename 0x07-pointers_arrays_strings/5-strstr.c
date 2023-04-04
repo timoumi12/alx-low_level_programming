@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpbrk - gets the length of a prefix substring
+ * _strstr - gets the length of a prefix substring
  * @s: buffer
  * @accept: char
  *
