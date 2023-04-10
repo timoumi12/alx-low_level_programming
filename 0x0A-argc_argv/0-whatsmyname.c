@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * mynameis - whatever
+ * main - whatever
  * @argc: number of arguments
  * @argv: array of arguments
  *
