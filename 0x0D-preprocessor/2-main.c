@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include "main.h"
 
 /**
  * main - prints src file
@@ -9,7 +8,6 @@
 
 int main(void)
 {
-	_putchar(__FILE__);
-	_putchar("\n");
+	printf("%s\n", __FILE__);
 	return (0);
 }
