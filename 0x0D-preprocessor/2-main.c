@@ -7,8 +7,9 @@
  * Return: void
 */
 
-void main(void)
+int main(void)
 {
 	_putchar(__FILE__);
 	_putchar("\n");
+	return (0);
 }
