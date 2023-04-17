@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define DOG_H
 #include "dog.h"
 
 /**
