@@ -9,7 +9,6 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int sum = 0;
 	unsigned int i;
 	va_list args;
 
