@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_listint - print elements
+ * listint_len - print elements
  * @h: linked_list
  * Return: size_t
 */
