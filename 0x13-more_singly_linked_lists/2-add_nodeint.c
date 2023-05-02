@@ -2,7 +2,8 @@
 
 /**
  * add_nodeint - print elements
- * @h: linked_list
+ * @head: linked_list
+ * @n: int
  * Return: size_t
 */
 
