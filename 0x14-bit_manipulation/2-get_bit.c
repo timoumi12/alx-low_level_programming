@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_binary - binary to unit
+ * get_bit - binary to unit
  * @n: long int
  * Return: void
 */
 
-void print_binary(unsigned long int n)
+int get_bit(unsigned long int n, unsigned int index)
 {
 	if (index >= sizeof(unsigned long int) * 8)
 		return (-1);
