@@ -3,6 +3,7 @@
 /**
  * get_bit - binary to unit
  * @n: long int
+ * @index: shh
  * Return: void
 */
 
