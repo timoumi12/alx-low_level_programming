@@ -1,19 +1,19 @@
 #include "lists.h"
-#include <stddef.h>
+
 /**
- * dlistint_len -  a function that prints all the elements of a list.
- * @h: a pointer to a linked list
- * Return: the number of nodes
+ * dlistint_len - prints list
+ * @h: dlistint_t
+ * Return: Nb of nodes
  */
 
 size_t dlistint_len(const dlistint_t *h)
 {
-	size_t length = 0;
+	int n = 0;
 
-	while (h != NULL)
+	while (h)
 	{
-		length++;
+		n++;
 		h = h->next;
 	}
-	return (length);
+	return (n);
 }
