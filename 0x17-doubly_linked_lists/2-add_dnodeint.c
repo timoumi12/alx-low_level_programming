@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * dadd_dnodeint - prints list
+ * add_dnodeint - prints list
  * @head: dlistint_t
  * @n: int
  * Return: Nb of nodes
