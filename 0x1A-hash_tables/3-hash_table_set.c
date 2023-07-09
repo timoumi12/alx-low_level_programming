@@ -11,14 +11,14 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index = key_index((const unsigned char *)key, ht->size);
-	hash_node_t *new;
+	hash_node_t *new, *current;
 
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (0);
 
-	new = malloc(sizeof(hash_node_t);
+	new = malloc(sizeof(hash_node_t));
 	if (new == NULL)
-		return (NULL);
+		return (0);
 
 	new->value = strdup((char* )value);
 	new->key = strdup((char *)key);
@@ -31,7 +31,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		current = ht->array[index];
 		if (strcmp(current->key, key) == 0)
 		{
-			new_node->next = current->next;
+			new->next = current->next;
 			ht->array[index] = new;
 			_free(current);
 			return (1);
@@ -51,4 +51,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 	}
 	return (1);
+}
+
+/**
+ * free_dlistint - Frees a linked dlistint_t list.
+ * @head: The head of the dlistint_t list.
+ */
+
+void _free(hash_node_t *node)
+{
+	free(node->key);
+	free(node->value);
+	free(node);
 }
