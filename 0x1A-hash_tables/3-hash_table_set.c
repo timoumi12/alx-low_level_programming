@@ -1,6 +1,18 @@
 #include "hash_tables.h"
 
 /**
+ * free_dlistint - Frees a linked dlistint_t list.
+ * @head: The head of the dlistint_t list.
+ */
+
+void _free(hash_node_t *node)
+{
+	free(node->key);
+	free(node->value);
+	free(node);
+}
+
+/**
  * hash_table_set - adds an element
  * @ht: hash table
  * @key: key
@@ -51,16 +63,4 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 	}
 	return (1);
-}
-
-/**
- * free_dlistint - Frees a linked dlistint_t list.
- * @head: The head of the dlistint_t list.
- */
-
-void _free(hash_node_t *node)
-{
-	free(node->key);
-	free(node->value);
-	free(node);
 }
